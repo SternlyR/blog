@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 210" role="img" aria-label="Black bird with red cap and yellow beak">
+  <g stroke="#fff" stroke-width="5" stroke-linejoin="round">
+    <path d="M70 96 L22 74 L54 104 L16 112 L56 122 L28 142 L70 134 Z" fill="#1E1E1C"/>
+    <path d="M132 58 L222 40 L136 106 Z" fill="#F4C93B"/>
+    <rect x="60" y="34" width="94" height="128" rx="34" fill="#1E1E1C" transform="rotate(-8 107 98)"/>
+  </g>
+  <path d="M64 58 Q84 18 132 30 Q140 34 142 42 Q104 32 66 70 Z" fill="#E2412F" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="114" cy="76" r="20" fill="#F4C93B" stroke="#fff" stroke-width="4"/>
+  <circle cx="118" cy="76" r="9" fill="#1E1E1C"/>
+  <circle cx="121" cy="73" r="3" fill="#fff"/>
+  <g fill="#fff"><circle cx="118" cy="124" r="4"/><circle cx="132" cy="132" r="4"/><circle cx="114" cy="140" r="4"/><circle cx="128" cy="148" r="4"/></g>
+  <g stroke="#F4C93B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M92 164 L78 196 L60 196"/><path d="M122 162 L140 190 L160 184"/>
+  </g>
+</svg>

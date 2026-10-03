@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 210" role="img" aria-label="Red mushroom with white spots">
+  <g transform="rotate(-12 100 110)" stroke="#fff" stroke-width="5" stroke-linejoin="round">
+    <path d="M78 96 L128 96 C132 130 138 160 152 190 C122 202 84 202 56 194 C70 164 78 132 78 96 Z" fill="#F4C93B"/>
+    <path d="M12 104 C10 44 62 14 106 16 C156 18 192 56 188 102 C150 116 50 118 12 104 Z" fill="#E2412F"/>
+  </g>
+  <g transform="rotate(-12 100 110)" fill="#fff">
+    <circle cx="52" cy="62" r="11"/><circle cx="96" cy="40" r="13"/><circle cx="142" cy="52" r="10"/>
+    <circle cx="80" cy="86" r="9"/><circle cx="124" cy="84" r="12"/><circle cx="164" cy="86" r="8"/>
+    <circle cx="30" cy="92" r="7"/><circle cx="62" cy="30" r="6"/>
+  </g>
+</svg>

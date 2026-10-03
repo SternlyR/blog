@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 250" role="img" aria-label="Green frog catching a dragonfly with its tongue">
+  <style>
+    .tongue{stroke-dasharray:180;stroke-dashoffset:0;animation:zap 5s ease-in-out infinite}
+    .fly{transform-origin:96px 34px;animation:hover 5s ease-in-out infinite}
+    .wing{transform-origin:96px 34px;animation:flap .18s ease-in-out infinite alternate}
+    @keyframes zap{0%,55%{stroke-dashoffset:0}68%,78%{stroke-dashoffset:180}92%,100%{stroke-dashoffset:0}}
+    @keyframes hover{0%,55%{transform:translate(0,0)}68%,78%{transform:translate(4px,-10px)}92%,100%{transform:translate(0,0)}}
+    @keyframes flap{to{transform:scaleY(.6)}}
+    @media (prefers-reduced-motion:reduce){.tongue,.fly,.wing{animation:none}}
+  </style>
+  <g stroke="#fff" stroke-width="5" stroke-linejoin="round">
+    <ellipse cx="38" cy="205" rx="32" ry="22" fill="#8CC63F"/>
+    <ellipse cx="182" cy="205" rx="32" ry="22" fill="#8CC63F"/>
+    <circle cx="66" cy="112" r="30" fill="#8CC63F"/>
+    <circle cx="154" cy="112" r="30" fill="#8CC63F"/>
+    <path d="M28 160 Q28 118 110 118 Q192 118 192 160 L192 205 Q192 222 175 222 L45 222 Q28 222 28 205 Z" fill="#8CC63F"/>
+  </g>
+  <path d="M28 150 Q28 118 110 118 Q192 118 192 150" fill="none" stroke="#8CC63F" stroke-width="10"/>
+  <circle cx="66" cy="110" r="17" fill="#fff"/><circle cx="154" cy="110" r="17" fill="#fff"/>
+  <circle cx="70" cy="112" r="8" fill="#1E1E1C"/><circle cx="150" cy="112" r="8" fill="#1E1E1C"/>
+  <path d="M74 152 Q110 172 146 152" fill="none" stroke="#3F7A22" stroke-width="5" stroke-linecap="round"/>
+  <g stroke="#3F7A22" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M88 180 V222 M132 180 V222"/>
+    <path d="M80 222 l8-6 8 6 M124 222 l8-6 8 6"/>
+    <path d="M14 222 l10-6 10 6 M186 222 l10-6 10 6"/>
+  </g>
+  <path class="tongue" d="M110 160 C 92 120, 62 78, 94 40" fill="none" stroke="#E8473A" stroke-width="8" stroke-linecap="round"/>
+  <g class="fly">
+    <g class="wing" fill="#D9F0B8" stroke="#6BAF3A" stroke-width="2">
+      <ellipse cx="80" cy="26" rx="16" ry="6" transform="rotate(-20 80 26)"/>
+      <ellipse cx="112" cy="26" rx="16" ry="6" transform="rotate(20 112 26)"/>
+    </g>
+    <path d="M96 22 V60" stroke="#6BAF3A" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="96" cy="18" r="6" fill="#6BAF3A"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 150" role="img" aria-label="Green oak leaf">
+  <g transform="rotate(-14 105 75)">
+    <path d="M10 78 C22 62 36 66 42 54 C38 38 56 32 64 44 C70 28 88 24 92 38 C102 20 122 22 124 38 C134 24 156 30 152 44 C168 40 180 54 170 66 C190 70 194 86 176 92 C186 106 172 120 158 112 C154 126 136 128 130 114 C122 130 100 128 100 114 C90 128 70 122 74 108 C58 118 44 106 54 96 C36 102 22 90 30 82 Z" fill="#7DC242" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+    <g stroke="#4E8F2A" stroke-width="3.5" stroke-linecap="round" fill="none">
+      <path d="M4 80 L176 78"/>
+      <path d="M50 79 L66 50 M50 79 L64 104 M88 79 L100 42 M88 79 L102 112 M126 78 L140 46 M126 78 L142 108 M156 78 L166 62 M156 78 L164 96"/>
+    </g>
+  </g>
+</svg>
