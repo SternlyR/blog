@@ -26,12 +26,22 @@
         <span class="bars" aria-hidden="true"></span>
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Main">
-        <a href="#shelves">Shop</a>
-        <a href="#crew">Meet the Crew</a>
+        <!-- TODO: point Shop All, Sign In and Cart at the Square Online store -->
+        <a href="#shelves">Shop All</a>
+        <a href="#about">About</a>
+        <a href="#workshops">Workshops</a>
         <a href="#visit">Visit</a>
-        <a href="#club">Wander Club</a>
-        <!-- TODO: point to the real online store -->
-        <a class="btn btn-red btn-sm" href="#shelves">Shop online</a>
+        <span class="nav-icons">
+          <a class="icon-btn" href="#" aria-label="Sign in">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="8" r="4.2" fill="currentColor"/><path d="M3.5 21c.8-4.6 4.2-7 8.5-7s7.7 2.4 8.5 7z" fill="currentColor"/></svg>
+            <span class="icon-label">Sign In</span>
+          </a>
+          <a class="icon-btn" href="#" aria-label="Cart">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M2 3h3l2.4 11.2a1.6 1.6 0 0 0 1.6 1.3h8.6a1.6 1.6 0 0 0 1.6-1.2L21 7H6.2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20" r="1.7" fill="currentColor"/><circle cx="17" cy="20" r="1.7" fill="currentColor"/></svg>
+            <span class="icon-label">Cart</span>
+          </a>
+        </span>
+        <a class="btn btn-red btn-sm" href="#shelves">Shop Now</a>
       </nav>
     </div>
   </header>
@@ -56,10 +66,11 @@
         </div>
 
         <div class="hero-copy">
-          <p class="lead">A neighborhood toy shop for curious kids, puddle jumpers, bug collectors and their grown-ups.</p>
+          <p class="lead">A playful, nature-based toy store filled with toys that spark creativity, exploration and joy.</p>
+          <p class="hero-shout">Let's go outside and play!</p>
           <div class="cta-row">
-            <a class="btn btn-red" href="#shelves">Explore the shelves</a>
-            <a class="btn btn-ghost" href="#visit">Come say hi</a>
+            <a class="btn btn-red" href="#shelves">Shop Now</a>
+            <a class="btn btn-ghost" href="#workshops">See workshops</a>
           </div>
         </div>
       </div>
@@ -73,12 +84,44 @@
       </div>
     </div>
 
+    <!-- ============ FEATURED ITEMS ============ -->
+    <section class="section featured-section" id="featured">
+      <div class="wrap">
+        <header class="section-head section-head-row">
+          <div>
+            <p class="eyebrow">Fresh on the shelves</p>
+            <h2>Featured Finds</h2>
+          </div>
+          <a class="btn btn-ghost btn-sm" href="#">Shop all</a>
+        </header>
+        <!-- TODO: swap in real product photos, prices and links (or embed Square Online products) -->
+        <ul class="products">
+          <li><a class="product" href="#">
+            <div class="product-img tint-green"><img src="characters/leaf.svg" alt=""></div>
+            <span class="tag">Outdoor</span>
+            <h3>Leaf Lantern Kit</h3><p class="price">[$00.00]</p></a></li>
+          <li><a class="product" href="#">
+            <div class="product-img tint-pink"><img src="characters/mushroom.svg" alt=""></div>
+            <span class="tag">Science</span>
+            <h3>Tiny Ice Cream!</h3><p class="price">[$00.99]</p></a></li>
+          <li><a class="product" href="#">
+            <div class="product-img tint-yellow"><img src="characters/bird.svg" alt=""></div>
+            <span class="tag">Arts &amp; crafts</span>
+            <h3>Huckleberry Landscape Paint Kit</h3><p class="price">$20.00</p></a></li>
+          <li><a class="product" href="#">
+            <div class="product-img tint-sky"><img src="characters/ladybug.svg" alt=""></div>
+            <span class="tag">Games</span>
+            <h3>Snug as a Bug in a Rug</h3><p class="price">[$00.00]</p></a></li>
+        </ul>
+      </div>
+    </section>
+
     <!-- ============ SHELVES / CATEGORIES ============ -->
     <section class="section" id="shelves">
       <div class="wrap">
         <header class="section-head">
           <p class="eyebrow">Take a wander</p>
-          <h2>What's on the shelves</h2>
+          <h2>Shop by Shelf</h2>
           <p>Every toy in the shop is hand-picked for play that sparks questions, gets hands busy and lasts longer than a rainy afternoon.</p>
         </header>
 
@@ -145,7 +188,14 @@
     </section>
 
     <!-- ============ WHY ============ -->
-    <section class="section" id="why">
+    <section class="section" id="about">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">About us</p>
+          <h2>Let's go outside and play!</h2>
+          <p>Wonder &amp; Wander Toys is a playful, nature-based toy store. Every toy on our shelves is chosen to spark creativity, exploration and joy, indoors and out.</p>
+        </header>
+      </div>
       <div class="wrap why">
         <div class="why-card">
           <span class="badge badge-green" aria-hidden="true">✿</span>
@@ -154,14 +204,55 @@
         </div>
         <div class="why-card">
           <span class="badge badge-yellow" aria-hidden="true">★</span>
-          <h3>Made for play</h3>
-          <p>Open-ended toys that grow with your kids, so the fun keeps going long after the wrapping paper.</p>
+          <h3>Nature-based</h3>
+          <p>Bug catchers, field kits and outdoor games that send kids out the door curious about the world.</p>
         </div>
         <div class="why-card">
           <span class="badge badge-red" aria-hidden="true">♥</span>
           <h3>Right down the street</h3>
           <p>A real shop with real people who love helping you find the perfect birthday gift.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ WORKSHOPS ============ -->
+    <section class="section workshops-section" id="workshops">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Hands-on fun</p>
+          <h2>Workshops</h2>
+          <p>Come make, build and explore with us at the shop. Spots are limited, so grab yours early.</p>
+        </header>
+        <!-- TODO: replace with real workshops (or embed the booking calendar) -->
+        <ul class="workshops">
+          <li class="workshop">
+            <div class="ws-date"><span class="ws-mon">[Mon]</span><span class="ws-day">[00]</span></div>
+            <div class="ws-body">
+              <h3>[Workshop name]</h3>
+              <p class="ws-meta">[Ages 5+] · [10:30am] · [$00]</p>
+              <p>[One or two lines about what kids will make or explore.]</p>
+            </div>
+            <a class="btn btn-green btn-sm" href="#">Save a spot</a>
+          </li>
+          <li class="workshop">
+            <div class="ws-date ws-red"><span class="ws-mon">[Mon]</span><span class="ws-day">[00]</span></div>
+            <div class="ws-body">
+              <h3>[Workshop name]</h3>
+              <p class="ws-meta">[Ages 3 to 6] · [11am] · [$00]</p>
+              <p>[One or two lines about what kids will make or explore.]</p>
+            </div>
+            <a class="btn btn-green btn-sm" href="#">Save a spot</a>
+          </li>
+          <li class="workshop">
+            <div class="ws-date ws-sky"><span class="ws-mon">[Mon]</span><span class="ws-day">[00]</span></div>
+            <div class="ws-body">
+              <h3>[Workshop name]</h3>
+              <p class="ws-meta">[All ages] · [2pm] · [Free]</p>
+              <p>[One or two lines about what kids will make or explore.]</p>
+            </div>
+            <a class="btn btn-green btn-sm" href="#">Save a spot</a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -198,13 +289,13 @@
         <div class="club">
           <img class="club-frog" src="characters/frog.svg" alt="" aria-hidden="true">
           <div class="club-copy">
-            <h2>Join the Wander Club</h2>
-            <p>New arrivals, shop happenings and the occasional surprise, hopping into your inbox now and then.</p>
+            <h2>Stay in the Loop</h2>
+            <p>New arrivals, upcoming workshops and the occasional surprise, hopping into your inbox now and then.</p>
             <!-- TODO: connect to the newsletter provider (Mailchimp, Klaviyo, Shopify, etc.) -->
             <form class="club-form" action="#" method="post" novalidate>
               <label class="sr-only" for="email">Email address</label>
               <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
-              <button class="btn btn-red" type="submit">Hop in!</button>
+              <button class="btn btn-red" type="submit">Sign Up</button>
             </form>
             <p class="form-msg" role="status" aria-live="polite"></p>
           </div>
@@ -219,13 +310,14 @@
     <div class="wrap footer-inner">
       <div>
         <p class="wordmark footer-mark">Wonder <span class="amp">&amp;</span> Wander <span class="toys">Toys</span></p>
-        <p class="tiny">Toys for curious minds and little adventurers.</p>
+        <p class="tiny">Let's go outside and play!</p>
       </div>
       <nav class="footer-nav" aria-label="Footer">
-        <a href="#shelves">Shop</a>
-        <a href="#crew">Meet the Crew</a>
+        <a href="#shelves">Shop All</a>
+        <a href="#about">About</a>
+        <a href="#workshops">Workshops</a>
         <a href="#visit">Visit</a>
-        <a href="#club">Wander Club</a>
+        <a href="#crew">Meet the Crew</a>
       </nav>
       <!-- TODO: add real social links -->
       <div class="social">

@@ -43,12 +43,12 @@
       msg.textContent = 'Hmm, that email looks a little wobbly. Try again?';
       return;
     }
-    msg.textContent = 'Ribbit! You are in the Wander Club. 🐸';
+    msg.textContent = "Ribbit! You're in the loop. 🐸";
     form.reset();
   });
 
   // Gentle scroll-in for cards
-  const targets = document.querySelectorAll('.section-head, .shelf, .why-card, .visit-photo, .visit-info, .club');
+  const targets = document.querySelectorAll('.section-head, .product, .shelf, .workshop, .why-card, .visit-photo, .visit-info, .club');
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((en) => {

@@ -13,7 +13,7 @@ Then open http://localhost:8000.
 
 ## What's here
 
-- `index.html`: the page (hero shop window, shelves, Meet the Crew, visit info, newsletter)
+- `index.html`: the page (hero shop window, featured finds, shop by shelf, Meet the Crew, about, workshops, visit info, Stay in the Loop signup)
 - `styles.css`: brand palette and layout
 - `script.js`: mobile menu, tappable characters, newsletter form and scroll reveals
 - `characters/`: SVG versions of the five brand characters (reusable anywhere)
@@ -25,6 +25,8 @@ Then open http://localhost:8000.
 Search `index.html` for `TODO` and `[` placeholders:
 
 - Street address, hours, phone, email
-- Links to the online store collections
+- Featured product photos, prices and links
+- Workshop names, dates, ages and booking links
+- Links to the Square Online store (Shop All, Sign In, Cart, collections)
 - Newsletter provider
 - Social links
