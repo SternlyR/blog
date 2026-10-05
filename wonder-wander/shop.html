@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop All | Wonder &amp; Wander Toys</title>
+  <meta name="description" content="Browse every toy, game, book and craft kit at Wonder & Wander Toys.">
+  <meta name="theme-color" content="#FFF7EA">
+  <link rel="icon" href="characters/ladybug.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/mystery-quest.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/fredoka.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Wonder and Wander Toys, home">
+        <img src="characters/ladybug.svg" alt="" width="44" height="29">
+        <span class="wordmark">Wonder <span class="amp">&amp;</span> Wander <span class="toys">Toys</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="shop.html" aria-current="page">Shop All</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#workshops">Workshops</a>
+        <a href="index.html#visit">Visit</a>
+        <span class="nav-icons">
+          <!-- TODO: point Sign In and Cart at the store's account and checkout -->
+          <a class="icon-btn" href="#" aria-label="Sign in">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="8" r="4.2" fill="currentColor"/><path d="M3.5 21c.8-4.6 4.2-7 8.5-7s7.7 2.4 8.5 7z" fill="currentColor"/></svg>
+            <span class="icon-label">Sign In</span>
+          </a>
+          <a class="icon-btn cart-btn" href="#" aria-label="Cart">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M2 3h3l2.4 11.2a1.6 1.6 0 0 0 1.6 1.3h8.6a1.6 1.6 0 0 0 1.6-1.2L21 7H6.2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20" r="1.7" fill="currentColor"/><circle cx="17" cy="20" r="1.7" fill="currentColor"/></svg>
+            <span class="icon-label">Cart</span>
+            <span class="cart-count" hidden>0</span>
+          </a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ SHOP BANNER ============ -->
+    <section class="shop-banner">
+      <div class="wrap">
+        <div class="window shop-window">
+          <div class="shop-banner-copy">
+            <p class="eyebrow">Take a wander</p>
+            <h1 class="shop-title">Shop All</h1>
+            <p>Every toy, game, book and kit on our shelves, hand-picked for play.</p>
+          </div>
+          <img class="shop-banner-bird" src="characters/bird.svg" alt="" aria-hidden="true">
+          <img class="shop-banner-mushroom" src="characters/mushroom.svg" alt="" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOOLBAR ============ -->
+    <section class="wrap shop-tools" aria-label="Filter toys">
+      <div class="tool-row">
+        <label class="search">
+          <span class="sr-only">Search toys</span>
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <input id="q" type="search" placeholder="Search for a toy..." autocomplete="off">
+        </label>
+        <label class="sort">
+          <span>Sort</span>
+          <select id="sort">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price, low to high</option>
+            <option value="price-desc">Price, high to low</option>
+            <option value="name">A to Z</option>
+          </select>
+        </label>
+      </div>
+      <div class="chips" id="chips" role="group" aria-label="Categories"></div>
+      <p class="results" id="results" aria-live="polite"></p>
+    </section>
+
+    <!-- ============ GRID ============ -->
+    <section class="wrap shop-grid-wrap">
+      <ul class="shop-grid" id="grid"></ul>
+      <div class="empty" id="empty" hidden>
+        <img src="characters/frog.svg" alt="" width="140">
+        <h2>No toys hopped out</h2>
+        <p>Try a different word or another shelf.</p>
+        <button class="btn btn-ghost btn-sm" id="reset" type="button">Show everything</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="crawl" aria-hidden="true"><img src="characters/ladybug.svg" alt=""></div>
+    <div class="wrap footer-inner">
+      <div>
+        <p class="wordmark footer-mark">Wonder <span class="amp">&amp;</span> Wander <span class="toys">Toys</span></p>
+        <p class="tiny">Let's go outside and play!</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="shop.html">Shop All</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#workshops">Workshops</a>
+        <a href="index.html#visit">Visit</a>
+        <a href="index.html#crew">Meet the Crew</a>
+      </nav>
+    </div>
+    <p class="wrap tiny copyright">© <span id="year">2026</span> Wonder &amp; Wander Toys</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script src="products.js" defer></script>
+  <script src="shop.js" defer></script>
+</body>
+</html>

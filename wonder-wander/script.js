@@ -14,7 +14,7 @@
   // Meet the Crew: tap a character, it wiggles and talks
   const speech = document.querySelector('.speech');
   const crew = document.querySelector('.crew');
-  document.querySelectorAll('.pal').forEach((pal) => {
+  if (speech) document.querySelectorAll('.pal').forEach((pal) => {
     pal.addEventListener('click', () => {
       document.querySelectorAll('.pal').forEach((p) => p.classList.remove('is-active'));
       void pal.offsetWidth; // restart the wiggle
@@ -36,7 +36,7 @@
   // Newsletter form (front-end only until it is wired to a provider)
   const form = document.querySelector('.club-form');
   const msg = document.querySelector('.form-msg');
-  form.addEventListener('submit', (e) => {
+  if (form) form.addEventListener('submit', (e) => {
     e.preventDefault();
     const email = form.email.value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
